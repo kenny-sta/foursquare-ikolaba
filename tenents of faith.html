@@ -1,85 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tenents of Faith</title>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="shortcut icon" href="Images/f.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-</head>
-<body>
+/* Global Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-<div class="above">
-  <!-- <h4>0893333333</h4> -->
-</div>
-<div class="navigate">
-  <div>
-      <img src="flogo (1).png" alt="">
-  </div>
-  <div class="sidenav nav-menu">
-      <a href="#">
-          <li class="nav-item">Tenents of Faith</li>
-      </a>
-      <a href="./about.html">
+/* Navigation Styles */
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2C3E50;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 50px; /* Adjusted height for iPhone SE */
+}
 
-          <li class="nav-item">About</li>
-      </a>
-      
-      <a href="index.html">
-      <li class="nav-item">Home</li>
-      </a>
-  </div>
-  </div><br>
-  <section class="tenents-of-faith">
-    <div class="faith">
-    <ol>
-      <li>The Holy Spirit</li> <br>
-      <li>The Eternal God</li><br>
-      <li>The Fall of Man</li><br>
-      <li>The Plan of Redmeption</li><br>
-      <li>Salvation Through Grace</li><br>
-      <li>Repentance and Aceptance</li><br>
-      <li>The New Birth</li><br>
-      <li>Daily Christian Living</li><br>
-      <li>Baptisim and the Lord Supper</li><br>
-      <li>Baptisim Of the Holy Spirit</li><br>
-      <li>The Spirit-Filled Life</li><br>
-      <li>The Gift and Fruit of the Holy Spirit</li><br>
-      <li>Moderation</li><br>
-      <li>Divine Healing</li><br>
-      <li>The Seocond Coming Of Christ</li><br>
-      <li>Church Relationship</li><br>
-      <li>Civil Government</li> <br>
-      <li>Judgement</li><br>
-      <li>Heaven</li><br>
-      <li>Hell</li><br>
-      <li>Evangelisim</li><br>
-      <li>Tithes and Offeerings</li><br>
-    </ol>
-    </div>
-  </section>
-  <footer class="ikolaba-footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="logo">
-                <img src="Images/flogo (1).png" alt="Foursquare Gospel Church Ikolaba Logo">
-            </div>
-            <div class="contact-info">
-                <h3>Contact Information</h3>
-                <p>Phone: 08027496818</p>
-                <p>Email: fgcikolabamedia@gmail.com</p>
-            </div>
-            <div class="social-links">
-                <h3>Follow Us</h3>
-                <a href="https://web.facebook.com/people/Foursquare-Gospel-Church-Ikolaba/100088396778105/?_rdc=1&_rdr"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                <a href="https://wa.me/qr/YFJZ55OKU43UL1"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
-      
-<script src="./js.js"></script>
-</body>
-</html>
+.navigate img {
+  height: 30px; /* Adjusted height for iPhone SE */
+}
+
+.sidenav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px; /* Adjusted font size for iPhone SE */
+}
+
+.nav-item {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 16px; /* Adjusted font size for iPhone SE */
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #18BC9C;
+  text-decoration: underline;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hidden by default on iPhone SE */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hamburger .bar {
+  height: 4px;
+  width: 25px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.navigate.responsive .sidenav {
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: #2C3E50;
+  display: flex;
+  z-index: 9;
+}
+
+.navigate.responsive .nav-item {
+  margin: 10px 0;
+}
+
+/* Banner Section */
+.main {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.main img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.mains {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mains h1 {
+  color: #18BC9C;
+  font-size: 24px; /* Adjusted font size for iPhone SE */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mains p {
+  color: #555;
+  font-size: 16px; /* Adjusted font size for iPhone SE */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mains span {
+  color: #2C3E50;
+  font-weight: bold;
+}
+
+.mains a button {
+  background-color: #18BC9C;
+  color: white;
+  font-size: 16px; /* Adjusted font size for iPhone SE */
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.mains a button:hover {
+  background-color: #148F77;
+}
+
+/* Footer Styles */
+.ikolaba-footer {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px 0; /* Reduced padding */
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Stacked elements vertically */
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content .logo img {
+  height: 30px; /* Adjusted height for iPhone SE */
+}
+
+.footer-content .contact-info,
+.footer-content .social-links {
+  text-align: left;
+  margin-bottom: 10px; /* Added margin bottom */
+}
+
+.footer-content h3 {
+  margin-bottom: 5px; /* Reduced margin bottom */
+  color: #18BC9C;
+}
+
+.footer-content p,
+.footer-content a {
+  color: #fff;
+  font-size: 12px; /* Reduced font size */
+  line-height: 1.4; /* Reduced line height */
+}
+
+.footer-content a {
+  margin-right: 5px; /* Reduced margin right */
+}
+
+.footer-content a i {
+  font-size: 18px;
+}
+
+/* Tenets of Faith Styles */
+.tenets-of-faith {
+  display: flex;
+  flex-direction: column; /* Stacked elements vertically */
+  align-items: center;
+  margin: 20px 0;
+}
+
+.tenets-of-faith h2 {
+  font-size: 18px; /* Reduced font size */
+  margin-bottom: 10px; /* Added margin bottom */
+}
+
+.tenets-of-faith p {
+  font-size: 14px; /* Reduced font size */
+  line-height: 1.4; /* Reduced line height */
+  margin-bottom: 20px; /* Added margin bottom */
+}
