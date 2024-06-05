@@ -1,17 +1,244 @@
-.mySlides{
-  height: 280px;
-  width: 90%;
-}
-body{
-  background-size: 100% 100%;
-  width: 50%;
-}
-ul li{
-  margin-left: 20px;
-}
-header{
-  margin-left: 20px;
-}
-.Jesus{
-margin-left: 50%;
-}
+
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navigation Styles */
+  .navigate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3E50;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 10px; /* Adjusted height for iPhone SE */
+  }
+  
+  .navigate img {
+    height: 30px; /* Adjusted height for iPhone SE */
+  }
+  
+  .sidenav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px; /* Adjusted font size for iPhone SE */
+  }
+  
+  .nav-item {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 16px; /* Adjusted font size for iPhone SE */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #18BC9C;
+    text-decoration: underline;
+  }
+  
+  /* Hamburger Menu Styles */
+  .hamburger {
+    display: none; /* Hidden by default on iPhone SE */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .hamburger .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+  }
+  
+  .navigate.responsive .sidenav {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #2C3E50;
+    display: flex;
+    z-index: 9;
+  }
+  
+  .navigate.responsive .nav-item {
+    margin: 10px 0;
+  }
+  
+  /* Banner Section */
+  .main {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+  
+  .mains {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mains h1 {
+    color: #18BC9C;
+    font-size: 24px; /* Adjusted font size for iPhone SE */
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .mains p {
+    color: #555;
+    font-size: 16px; /* Adjusted font size for iPhone SE */
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .mains span {
+    color: #2C3E50;
+    font-weight: bold;
+  }
+  
+  .mains a button {
+    background-color: #18BC9C;
+    color: white;
+    font-size: 16px; /* Adjusted font size for iPhone SE */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mains a button:hover {
+    background-color: #148F77;
+  }
+  
+  /* Footer Styles */
+  .ikolaba-footer {
+    background-color: #2C3E50;
+    color: #fff;
+    padding: 10px 0; /* Reduced padding */
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* Stacked elements vertically */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content .logo img {
+    height: 30px; /* Adjusted height for iPhone SE */
+  }
+  
+  .footer-content .contact-info,
+  .footer-content .social-links {
+    text-align: left;
+    margin-bottom: 10px; /* Added margin bottom */
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 5px; /* Reduced margin bottom */
+    color: #18BC9C;
+  }
+  
+  .footer-content p,
+  .footer-content a {
+    color: #fff;
+    font-size: 12px; /* Reduced font size */
+    line-height: 1.4; /* Reduced line height */
+  }
+  
+  .footer-content a {
+    margin-right: 5px; /* Reduced margin right */
+  }
+  
+  .footer-content a i {
+    font-size: 18px;
+  }
+  
+  /* Tenets of Faith Styles */
+  .tenets-of-faith {
+    display: flex;
+    flex-direction: column; /* Stacked elements vertically */
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .tenets-of-faith h2 {
+    font-size: 18px; /* Reduced font size */
+    margin-bottom: 10px; /* Added margin bottom */
+  }
+  
+  .tenets-of-faith p {
+    font-size: 14px; /* Reduced font size */
+    line-height: 1.4; /* Reduced line height */
+    margin-bottom: 20px; /* Added margin bottom */
+  }
+  /* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
