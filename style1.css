@@ -34,8 +34,9 @@ body {
 
 .nav-menu a {
   text-decoration: none;
-  margin-right: 20px;
-  font-size: 16px; /* Adjusted font size for iPhone SE */
+  margin-right: 3px;
+  font-size: 10px; /* Adjusted font size for iPhone SE */
+ 
 }
 
 .nav-item {
