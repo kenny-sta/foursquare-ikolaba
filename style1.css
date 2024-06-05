@@ -37,6 +37,7 @@ body {
   text-decoration: none;
   margin-right: 5px;
   font-size: 16px; /* Adjusted font size for iPhone SE */
+  text-allign:center;
 }
 
 .nav-item {
