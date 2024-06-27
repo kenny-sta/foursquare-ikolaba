@@ -65,6 +65,22 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js.js"></script>
+	<script src="js.js">
+		document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-item').forEach(n => 
+        n.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+        })
+    );
+});
+
+	</script>
 </body>
 </html>
